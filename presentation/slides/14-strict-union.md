@@ -7,7 +7,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 ### Strict union - The problem 
 
-* Unions allow properties of any union constituent - as we perviously saw
-* Find a way to avoid this without discriminated unions.
+* Unions allow properties of any union constituent - as we previously saw
+* Find a way to avoid this without discriminated unions
 
 

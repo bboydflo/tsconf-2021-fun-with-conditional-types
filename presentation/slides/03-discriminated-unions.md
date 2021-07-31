@@ -20,7 +20,7 @@ Why does my union allow properties from any union constituent?
 
 <answer>
 
-By design. Use a discriminated union.
+By design. Use a discriminated union
 
 </answer>
 
@@ -29,14 +29,14 @@ By design. Use a discriminated union.
 ### About discriminated unions 
 
 * A property is considered as a discriminant property if:
-    * A union of literal types.
-    * It is a union type containing at least one literal type.
+    * A union of literal types
+    * It is a union type containing at least one literal type
 
 ----
 
 ### Type Guards - Narrowing unions
 
-- Syntactic constructs that help us narrow a union.
+- Syntactic constructs that help us narrow a union
 - To narrow the `value` variable:
     - `'property' in value`  - the `in` type guard
     - `value === constant`, `value !== constant`, `!value`, `value` expressions in `if` statements

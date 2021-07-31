@@ -23,7 +23,7 @@ copy("AAA", "BBB"); // should be errors
 
 <answer>
 
-We can use branded types.
+We can use branded types
 
 </answer>
 
@@ -31,8 +31,8 @@ We can use branded types.
 
 ### What are branded types
 
-* A primitive type intersected with an object 
-* The object type that ensures that the resulting type is no longer compatible with the primitive type.
+* A primitive type intersected with an object
+* The object type that ensures that the resulting type is no longer compatible with the primitive type
     * Can be done with a string literal property
     * Can be done with a unique symbol
 

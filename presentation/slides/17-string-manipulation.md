@@ -10,7 +10,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 <question>
 
-Can we create a type that has `get` / `set` methods for each member of another type
+Can we create a type that has `get` / `set` methods for each member of another type?
 ```ts
 type Env = {
     "isServer": string;
@@ -46,7 +46,8 @@ We can use **template literal types**
 
 <question>
 
-How can we transform snake case properties names to camel case property names:
+How can we transform snake case properties names to camel case property names?
+
 ```ts
 type Env = {
     "X_IS_ADMIN" : boolean;
@@ -61,6 +62,6 @@ type EnvData = {
 
 <answer>
 
-We can use **template literal types** in **recursive conditional types**
+We can use **template literal types** in **recursive conditional types**.
 
 </answer>

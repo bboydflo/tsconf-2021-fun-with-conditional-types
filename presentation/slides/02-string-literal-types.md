@@ -14,15 +14,15 @@ How can I strictly type the align property of an element (it can be one of the s
 </question>
 <answer>
 
-Use string literal types.
+Use string literal types
 
 </answer>
 
 ----
 ### What are string literal types ?
 
-* Any value can also be a type.
-* The set that only has one value.
+* Any value can also be a type
+* The set that only has one value
 * Examples of literal types:
     * `string` literal types: `"center"`, `"left"`, `"right"`
     * `number` literal types: `0`, `100`
@@ -35,7 +35,7 @@ Use string literal types.
 
 ### Narrowing unions of literals 
 
-- Syntactic constructs that help us narrow a union.
+- Syntactic constructs that help us narrow a union
 - To narrow the `value` variable:
     - `'property' in value`  - the `in` type guard
     * `value === constant`, `value !== constant`, `!value`, `value` expressions in `if` statements
@@ -46,8 +46,8 @@ Use string literal types.
 
 ### Strict null checking 
 
-* Carves out `null` and `undefined` out of other types.
-* In terms of sets: The values `null` and `undefined` are not by default part of the sets described by a type.
+* Carves out `null` and `undefined` out of other types
+* In terms of sets: The values `null` and `undefined` are not by default part of the sets described by a type
 
 ----
 

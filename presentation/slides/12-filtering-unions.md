@@ -85,6 +85,6 @@ Staring with the union `string | number` can we create a new union `string[] | n
 
 <answer>
 
-Yes we can using distributive conditional types.
+Yes we can using distributive conditional types
 
 </answer>

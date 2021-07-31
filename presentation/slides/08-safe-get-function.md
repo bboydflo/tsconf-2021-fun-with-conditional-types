@@ -30,5 +30,3 @@ Use index access types, `keyof` and a generic function
 
 </answer>
 
-
-----

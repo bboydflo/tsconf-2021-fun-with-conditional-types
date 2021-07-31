@@ -9,12 +9,12 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 <question>
 
-If I have a union `"yes" | "no" | 0 | 1` how can I get the `string` or `number` constituents
+If I have a union `"yes" | "no" | 0 | 1` how can I get the `string` or `number` constituents?
 
 </question>
 <answer>
 
-Using an intersection.
+Use an intersection
 
 </answer>
 
@@ -73,7 +73,7 @@ type Doctor = { type: "d"; name: string; speciality: string }
 
 <answer>
 
-Using an intersection.
+Use an intersection
 
 </answer>
 

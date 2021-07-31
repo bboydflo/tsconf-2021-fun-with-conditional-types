@@ -23,5 +23,3 @@ type I = { foo: number } & { bar: number }
 We can use the **inference** behavior of **conditional types**.
 
 </answer>
-
----

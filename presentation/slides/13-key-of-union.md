@@ -20,6 +20,6 @@ type Keys = KeyOfAll<Person> // "name" | "specialty" | "field"
 </question>
 <answer>
 
-We can use **distributive conditional types**.
+We can use **distributive conditional types**
 
 </answer>

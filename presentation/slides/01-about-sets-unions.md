@@ -42,13 +42,13 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 <question>
 
-How can I represent an object that is either a `Engineer` or a `Doctor`
+How can I represent an object that is either a `Engineer` or a `Doctor`?
 
 </question>
 
 <answer>
 
-Use a union.
+Use a union
 
 </answer>
 
@@ -64,7 +64,7 @@ Why can't I access some union properties?
 
 <answer>
 
-You can only safely access common properties. You need to narrow the type of a union.
+You can only safely access common properties. You need to narrow the type of a union
 
 </answer>
 
@@ -72,7 +72,7 @@ You can only safely access common properties. You need to narrow the type of a u
 
 ### Type Guards - Narrowing unions
 
-* Syntactic constructs that help us narrow a union.
+* Syntactic constructs that help us narrow a union
 * To narrow the `value` variable:
     * `'property' in value`  - the `in` type guard
     

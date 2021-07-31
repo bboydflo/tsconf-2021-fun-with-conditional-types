@@ -8,7 +8,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 ### Inference behavior of conditional types
 
 <question>
-Give a type that contains functions that return promisees, can we create a type with the same keys but the value of the promisees as the property types 
+Give a type that contains functions that return promises, can we create a type with the same keys but the value of the promises as the property types?
 
 ```ts
 type EnvGetters = {
@@ -25,7 +25,7 @@ type Env = {
 
 <answer>
 
-Yes we can using **conditional types**.
+Yes, we can use **conditional types**
 
 </answer>
 

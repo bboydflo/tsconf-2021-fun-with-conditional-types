@@ -20,7 +20,7 @@ function getSampleData(value: "string" | "number"): string | number {
 
 <answer>
 
-We can use conditional types. 
+We can use conditional types
 
 </answer>
 
@@ -59,7 +59,7 @@ type StringKeys = "name" | "author"
 
 <answer>
 
-We can use mapped and conditional types. 
+We can use mapped and conditional types
 
 </answer>
 
@@ -76,5 +76,5 @@ We can use mapped and conditional types.
     * `C` must be 
         * valid key for a type: (a subtype of `number`, `string` or `symbol`)
         * `never`
-    * If `C` is `never` that property will be removed form the result.
-    * Usually a `C` will be a conditional type.
+    * If `C` is `never` that property will be removed form the result
+    * Usually a `C` will be a conditional type

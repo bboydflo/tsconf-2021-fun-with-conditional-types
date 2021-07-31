@@ -9,7 +9,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 <question>
 
-Is it possible to create a type that makes all nested properties readonly 
+Is it possible to create a type that makes all nested properties readonly?
 
 ```ts
 type EnvGetters = {
