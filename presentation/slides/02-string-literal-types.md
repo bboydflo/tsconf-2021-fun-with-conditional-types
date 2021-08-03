@@ -19,7 +19,7 @@ Use string literal types
 </answer>
 
 ----
-### What are string literal types ?
+### What are literal types ?
 
 * Any value can also be a type
 * The set that only has one value

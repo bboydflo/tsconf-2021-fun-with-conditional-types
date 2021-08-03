@@ -20,6 +20,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 ### Set operations can be applied to types
 
 * Unions:
+    * Same concept as set unions <img src="./media/union.png" style="position:absolute; top:120px; left: 950px" />
     * `{ foo: number } | { bar: number }` the set of all objects that either
         * have a `foo` property of type `number`
         * have a `bar` property of type `number`
@@ -30,6 +31,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 ### Set operations can be applied to types
 
 * Intersections:
+    * Same concept as set intersections <img src="./media/intersection.png" style="position:absolute; top:120px; left: 950px" />
     * `{ foo: number } & { bar: number }` the set of all objects that at the same time:
         * have a `foo` property of type `number`
         * have a `bar` property of type `number`
@@ -43,6 +45,10 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 <question>
 
 How can I represent an object that is either a `Engineer` or a `Doctor`?
+```ts
+interface Engineer { name: string; age: string; field: string }
+interface Doctor { name: string; age: string; speciality: string }
+```
 
 </question>
 
@@ -75,5 +81,4 @@ You can only safely access common properties. You need to narrow the type of a u
 * Syntactic constructs that help us narrow a union
 * To narrow the `value` variable:
     * `'property' in value`  - the `in` type guard
-    
----
+
