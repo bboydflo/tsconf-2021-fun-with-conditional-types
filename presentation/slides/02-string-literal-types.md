@@ -38,6 +38,7 @@ Use string literal types
 - Syntactic constructs that help us narrow a union
 - To narrow the `value` variable:
     - `'property' in value`  - the `in` type guard
+    - `typeof value === 'valid type'` - the `typeof` type guard
     * `value === constant`, `value !== constant`, `!value`, `value` expressions in `if` statements
     * `switch(value)` statements
 

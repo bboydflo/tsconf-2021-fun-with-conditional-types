@@ -17,8 +17,8 @@ type Env = {
     "maxRequestsPerMinute": number;
 }
 type EnvData = {
-    "getIsServer": string;
-    "getMaxRequestsPerMinute": number;
+    "getIsServer": () => string;
+    "getMaxRequestsPerMinute": () => number;
 }
 ```
 </question>

@@ -68,7 +68,7 @@ Use a custom mapped type in conjunction with the conditional type `ReturnType`
 ### Manipulating modifiers 
 
 * `{ readonly  [P in keyof T]: U }` - add `readonly` modifier
-* `{ readonly- [P in keyof T]: U }` - remove `readonly` modifier
+* `{ -readonly [P in keyof T]: U }` - remove `readonly` modifier
 * `{ [P in keyof T] ?: U }` - add `?` modifier
 * `{ [P in keyof T]-?: U }` - remove `-?` modifier
 

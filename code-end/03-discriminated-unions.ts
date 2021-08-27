@@ -1,32 +1,19 @@
 export {}
 
 type Doctor = { type: "d", name: string; specialty: string }
-type Engineer = { type: "e", name: string; field: string }
-type Student = { type: "s", name: string; university: string }
+type Engineer = { type: number, name: string; field: string }
+type Artist = { type: boolean, name: string; field: string }
 
-let obj = { name: "John", specialty: "", field: "" };
-let doctor: Doctor = { name: "John", specialty: "", field: "" };
-let engineer: Engineer = { name: "John", specialty: "", field: "" };
-let person: Student | Doctor | Engineer = 
-    Math.random() > 0.5 ? { type: "e", name: "John", field: "" }:
-    Math.random() > 0.5 ? { type: "s", name: "John", university: "" }:
-    { type: "d", name: "John", specialty: "" };
-
-
-if (person.type === "e") {
-    person
-} else {
-    person
+function printPerson(p: Doctor | Engineer | Artist) { 
+    if(p.type === "d") {
+        withDoctor(p)
+    } else {
+        if (typeof p.type === "number") {
+            p.type
+        }
+    }
 }
 
+function withDoctor(p:Doctor) {}
 
-switch (person.type) {
-    case "d" : person; break;
-    case "e" : person; break;
-    default:
-        assertNever(person);
-}
 
-function assertNever(v: never) {
-    throw new Error("Not supposed to happen");
-}

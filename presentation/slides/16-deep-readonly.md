@@ -12,11 +12,11 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 Is it possible to create a type that makes all nested properties readonly?
 
 ```ts
-type EnvGetters = {
+type Env = {
     restApi: { server: string, port: number }
     dbServers: Array<{ server: string, port: number }>
 }
-type Env = {
+type ReadonlyEnv = {
     readonly restApi: { readonly server: string, readonly port: number }
     readonly dbServers: Array<{ readonly server: string, readonly port: number }>
 }

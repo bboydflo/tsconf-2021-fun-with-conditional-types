@@ -44,4 +44,3 @@ We can use branded types
     * A `number` is a database id
     * A `string` is a GUID
 
-----

@@ -1,17 +1,28 @@
-export function getValues(getters: EnvGetters, defaultVaues: Env) : Env {
+export function getValues(getters: EnvGetters, defaultValues: Env) : Env {
     let o = {} as Env
     for (const key of Object.keys(getters) as Array<keyof EnvGetters>) {
         const getter = getters[key];
-        o[key] = (getter ? getter() : defaultVaues[key]) as never;
+        o[key] = (getter ? getter() : defaultValues[key]) as never;
     }
     return o
 }
+getValues({
+    PORT: () => 81,    
+}, {
+    PORT: 1,
+    SERVER: ""
+})
 
 type EnvGetters = {
-    "SERVER"?: () => string,
+    readonly "SERVER"?: () => string,
     "PORT": () => number
 }
+
+type R = NonNullable< (() => string) | undefined>
+
+type K = keyof EnvGetters
 type Env = {
-    "SERVER": string,
-    "PORT": number
+    [P in K]: ReturnType<NonNullable<EnvGetters[P]>>
 }
+
+

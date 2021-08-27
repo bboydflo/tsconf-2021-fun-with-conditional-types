@@ -1,12 +1,18 @@
-type LoadingState = { isLoading: true; }
-type SuccessState = { isLoading: false; isSuccess: true; }
-type ErrorState =   { isLoading: false; isSuccess: false; errorMessage: string; }
 
-type State = LoadingState | SuccessState | ErrorState;
+type KeyOfAll<T> = T extends T ? keyof T : never
 
+type Doctor = { name: string; specialty: string }
+type Engineer = { name: string; field: string }
+type Artist = { name: string; preferredMedium: string }
 
-const testState: State = {
-    isLoading: true,
-    isSuccess: true,
-    errorMessage: "Error!"
+type AddUndefinedProps<TOriginalUnion, TUnionConstituent> = Partial<Record<Exclude<KeyOfAll<TOriginalUnion>, keyof TUnionConstituent>, undefined>>
+type StrictUnion<T, TOriginal = T> = T extends T? T & AddUndefinedProps<TOriginal, T> : never;
+
+type Person = StrictUnion< Doctor | Engineer | Artist>
+
+let o: Person = {
+    name: "",
+    field: "",
+    preferredMedium: "",
+    specialty: ""
 }

@@ -11,31 +11,27 @@ interface Doctor {
 }
 
 function printPerson(p: Engineer | Doctor) {
-    p
+    console.log(p.name); 
+    console.log(p.age);
     if ('speciality' in p) {
-        console.log(p.speciality)
+        p.speciality
     } else {
-        p.field
+        console.log(p.field)
     }
 }
 
 
 printPerson({
     name: "",
-    age: '2',
-    field: "IT"
+    age: "",
+    field: ""
 });
-
 
 printPerson({
     name: "",
-    age: '2',
-    speciality: "OBGYN"
+    age: "",
+    speciality: ""
 });
 
-
-printPerson({
-    name: "",
-});
 
 export {}

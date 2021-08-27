@@ -30,12 +30,24 @@ Yes, we can use **conditional types**
 </answer>
 
 --- 
+### Anatomy of conditional types
 
+```
+T extends B<infer U1, infer U2, ... infer Un>
+    ? R<U1, U2, ..., Un> 
+    : F
+```
+
+* `infer` will introduce new type parameters
+* During the matching phase they don't count towards compatibility 
+* These new type parameters extract the types in `T` 
+* On the true branch we can use these new type parameters
+* On the false branch we can't use them (since they weren't extracted)
+
+----
 ### Conditional type summary
 
 * Conditional types have 3 behaviors
     * The type conditional behavior
     * The union distribution behavior
     * The inference behavior
-
----

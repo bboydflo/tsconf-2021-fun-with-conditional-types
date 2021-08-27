@@ -81,4 +81,5 @@ You can only safely access common properties. You need to narrow the type of a u
 * Syntactic constructs that help us narrow a union
 * To narrow the `value` variable:
     * `'property' in value`  - the `in` type guard
+    * `typeof value === 'valid type'` - the `typeof` type guard
 

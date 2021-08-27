@@ -10,9 +10,10 @@ export function getValues(getters: EnvGetters) : Env {
 
 type EnvGetters = {
     "SERVER": () => string,
-    "PORT": () => number
+    "PORT": ()   => number
 }
-type Env = {
-    "SERVER": string,
-    "PORT": number
-}
+type Env = AllReturnTypes<EnvGetters>
+
+type AllReturnTypes<T extends { [n: string]: (...a: any) => any }> = {
+    [P in keyof T]:  ReturnType<T[P]>;
+};

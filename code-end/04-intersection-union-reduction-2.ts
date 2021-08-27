@@ -1,8 +1,9 @@
 export {}
 
-function printColor(s: string  | "red" | "blue") {
+function printColor(s: (string & {})  | "red" | "blue") {
 
 }
 
 printColor("#FF00FF");
-printColor("");
+printColor("red")
+printColor("")
